@@ -2,6 +2,11 @@ import streamlit as st
 import whisper
 
 st.title("Speech to Text")
+st.text("""
+Whisper is an automatic speech recognition model trained on 680,000 hours of multilingual data collected from the web.  
+As per OpenAI, this model is robust to accents, background noise and technical language.  
+In addition, it supports 99 different languages’ transcription and translation from those languages into English.
+""")
 
 
 audio_file = st.file_uploader("Upload Audio", type=["wav", "mp3", "m4a"])
